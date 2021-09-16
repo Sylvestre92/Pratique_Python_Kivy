@@ -1,0 +1,45 @@
+#: import hex kivy.utils.get_color_from_hex
+<ButtonGris@Button>:
+    font_size:25
+    background_color: 0,0,0,0
+    canvas.before:
+        color:
+            rgba: hex('#2e2b2b') if self.state == normal else (0, .7, .7, 1)
+            Ellipse:
+                pos: self.pos
+                size: 60, 60
+
+<ButtonBlanc@Button>:
+    font_size:25
+    background_color: 0,0,0,0
+    canvas.before:
+        color:
+            rgba: hex('#ffffff') if self.state == normal else (0, .7, .7, 1)
+            Ellipse:
+                pos: self.pos
+                size: 60, 60
+
+<ButtonJaune@Button>:
+    font_size:25
+    background_color: 0,0,0,0
+    canvas.before:
+        color:
+            rgba: hex('#ffa20e') if self.state == normal else (0, .7, .7, 1)
+            Ellipse:
+                pos: self.pos
+                size: 60, 60
+
+<ButtonRectangle@Button>:
+    font_size:25
+    background_color: 0,0,0,0
+    canvas.before:
+        color:
+            rgba: hex('#2e2b2b') if self.state == normal else (0, .7, .7, 1)
+            RoundedRectangle:
+                pos: self.pos
+                size: 120, 60
+                radius: [30,]
+
+Calculatrice:
+    id : calculatrice
+        
